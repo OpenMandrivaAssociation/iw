@@ -8,7 +8,7 @@ License: BSD
 Group: System/Base
 Source0: iw-%{ver}.tar.bz2
 URL: http://linuxwireless.org/en/users/Documentation/iw/
-Requires: libnl1
+#Requires: libnl1
 BuildRequires: libnl-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
