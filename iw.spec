@@ -1,14 +1,11 @@
-%define ver 0.9.9
-
 Name: iw
 Summary: Configuration utility for wireless devices
-Version: %ver
+Version: 0.9.10
 Release: %mkrel 1
 License: BSD
 Group: System/Base
-Source0: iw-%{ver}.tar.bz2
+Source0: http://wireless.kernel.org/download/iw/iw-%{version}.tar.bz2
 URL: http://linuxwireless.org/en/users/Documentation/iw/
-#Requires: libnl1
 BuildRequires: libnl-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
