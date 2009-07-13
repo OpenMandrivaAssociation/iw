@@ -1,6 +1,6 @@
 Name: iw
 Summary: Configuration utility for wireless devices
-Version: 0.9.14
+Version: 0.9.15
 Release: %mkrel 1
 License: BSD
 Group: System/Base
