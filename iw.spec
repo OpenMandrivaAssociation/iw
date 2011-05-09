@@ -33,5 +33,5 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 /sbin/iw
-%{_mandir}/man8/iw.8.lzma
+%{_mandir}/man8/iw.8.*
 %doc COPYING README
