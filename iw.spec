@@ -1,13 +1,13 @@
-Name: iw
-Summary: Configuration utility for wireless devices
-Version: 0.9.21
-Release: %mkrel 2
-License: BSD
-Group: System/Base
-Source0: http://wireless.kernel.org/download/iw/iw-%{version}.tar.bz2
-URL: http://linuxwireless.org/en/users/Documentation/iw/
-BuildRequires: libnl-devel
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Name:		iw
+Summary:	Configuration utility for wireless devices
+Version:	3.1
+Release:	%mkrel 1
+License:	BSD
+Group:		System/Base
+Source0:	http://wireless.kernel.org/download/iw/iw-%{version}.tar.bz2
+URL:		http://linuxwireless.org/en/users/Documentation/iw/
+BuildRequires:	libnl-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 iw is a new nl80211 based CLI configuration utility for wireless devices.
@@ -32,6 +32,6 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
+%doc COPYING README
 /sbin/iw
 %{_mandir}/man8/iw.8.*
-%doc COPYING README
