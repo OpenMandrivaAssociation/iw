@@ -1,7 +1,7 @@
 Name:		iw
 Summary:	Configuration utility for wireless devices
-Version:	3.2
-Release:	%mkrel 1
+Version:	3.3
+Release:	1
 License:	BSD
 Group:		System/Base
 Source0:	http://wireless.kernel.org/download/iw/iw-%{version}.tar.bz2
@@ -20,17 +20,12 @@ mac80211 driver as these are the new drivers being written.
 %make
 
 %install
-%__rm -rf %{buildroot}
 %makeinstall \
 	PREFIX=%{buildroot} \
 	BINDIR=%{buildroot}/sbin \
 	MANDIR=%{buildroot}/%{_mandir}
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc COPYING README
 /sbin/iw
 %{_mandir}/man8/iw.8.*
