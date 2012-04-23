@@ -1,6 +1,6 @@
 Name:		iw
 Summary:	Configuration utility for wireless devices
-Version:	3.3
+Version:	3.4
 Release:	1
 License:	BSD
 Group:		System/Base
