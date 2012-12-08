@@ -1,12 +1,12 @@
 Name:		iw
 Summary:	Configuration utility for wireless devices
 Version:	3.7
-Release:	1
+Release:	%mkrel 1
 License:	BSD
 Group:		System/Base
-URL:		http://linuxwireless.org/en/users/Documentation/iw/
 Source0:	http://wireless.kernel.org/download/iw/iw-%{version}.tar.bz2
-BuildRequires:	libnl-devel
+URL:		http://linuxwireless.org/en/users/Documentation/iw/
+BuildRequires:	pkgconfig(libnl-3.0)
 
 %description
 iw is a new nl80211 based CLI configuration utility for wireless devices.
@@ -20,7 +20,7 @@ mac80211 driver as these are the new drivers being written.
 %make
 
 %install
-%makeinstall \
+%{makeinstall} \
 	PREFIX=%{buildroot} \
 	BINDIR=%{buildroot}/sbin \
 	MANDIR=%{buildroot}/%{_mandir}
