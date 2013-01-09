@@ -1,7 +1,7 @@
 Name:		iw
 Summary:	Configuration utility for wireless devices
-Version:	3.7
-Release:	%mkrel 1
+Version:	3.8
+Release:	1
 License:	BSD
 Group:		System/Base
 Source0:	http://wireless.kernel.org/download/iw/iw-%{version}.tar.bz2
