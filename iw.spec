@@ -1,10 +1,10 @@
 Name:		iw
 Summary:	Configuration utility for wireless devices
 Version:	3.8
-Release:	2
+Release:	3
 License:	BSD
 Group:		System/Base
-Source0:	http://wireless.kernel.org/download/iw/iw-%{version}.tar.bz2
+Source0:	http://kernel.org/pub/software/network/iw/iw-%{version}.tar.bz2
 URL:		http://linuxwireless.org/en/users/Documentation/iw/
 BuildRequires:	pkgconfig(libnl-3.0)
 
