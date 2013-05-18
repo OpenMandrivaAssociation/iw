@@ -1,11 +1,11 @@
-Name:		iw
 Summary:	Configuration utility for wireless devices
+Name:		iw
 Version:	3.8
 Release:	3
 License:	BSD
 Group:		System/Base
+Url:		http://linuxwireless.org/en/users/Documentation/iw/
 Source0:	http://kernel.org/pub/software/network/iw/iw-%{version}.tar.bz2
-URL:		http://linuxwireless.org/en/users/Documentation/iw/
 BuildRequires:	pkgconfig(libnl-3.0)
 
 %description
@@ -20,7 +20,7 @@ mac80211 driver as these are the new drivers being written.
 %make
 
 %install
-%{makeinstall} \
+%makeinstall \
 	PREFIX=%{buildroot} \
 	BINDIR=%{buildroot}/sbin \
 	MANDIR=%{buildroot}/%{_mandir}
@@ -29,3 +29,4 @@ mac80211 driver as these are the new drivers being written.
 %doc COPYING README
 /sbin/iw
 %{_mandir}/man8/iw.8.*
+
