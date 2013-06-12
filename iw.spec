@@ -5,7 +5,7 @@ Release:	1
 License:	BSD
 Group:		System/Base
 Url:		http://linuxwireless.org/en/users/Documentation/iw/
-Source0:	http://kernel.org/pub/software/network/iw/iw-%{version}.tar.bz2
+Source0:	http://kernel.org/pub/software/network/iw/iw-%{version}.tar.xz
 BuildRequires:	pkgconfig(libnl-3.0)
 
 %description
