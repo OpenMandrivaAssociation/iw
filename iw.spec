@@ -1,6 +1,6 @@
 Summary:	Configuration utility for wireless devices
 Name:		iw
-Version:	3.10
+Version:	3.11
 Release:	1
 License:	BSD
 Group:		System/Base
@@ -29,4 +29,3 @@ mac80211 driver as these are the new drivers being written.
 %doc COPYING README
 /sbin/iw
 %{_mandir}/man8/iw.8.*
-
