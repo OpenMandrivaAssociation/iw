@@ -1,7 +1,7 @@
 Summary:	Configuration utility for wireless devices
 Name:		iw
 Version:	3.11
-Release:	4
+Release:	5
 License:	BSD
 Group:		System/Base
 Url:		http://linuxwireless.org/en/users/Documentation/iw/
