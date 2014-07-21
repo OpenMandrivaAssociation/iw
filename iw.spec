@@ -17,6 +17,7 @@ mac80211 driver as these are the new drivers being written.
 %setup -q
 
 %build
+%setup_compile_flags
 %make
 
 %install
