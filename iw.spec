@@ -1,7 +1,7 @@
 Summary:	Configuration utility for wireless devices
 Name:		iw
-Version:	4.1
-Release:	2
+Version:	4.3
+Release:	1
 License:	BSD
 Group:		System/Base
 Url:		http://linuxwireless.org/en/users/Documentation/iw/
@@ -18,7 +18,7 @@ mac80211 driver as these are the new drivers being written.
 
 %build
 %setup_compile_flags
-%make
+%make CC=%{__cc}
 
 %install
 %makeinstall \
