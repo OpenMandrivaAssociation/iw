@@ -21,12 +21,12 @@ mac80211 driver as these are the new drivers being written.
 %make_build CC=%{__cc}
 
 %install
-%make_install \
-	PREFIX=%{buildroot} \
-	BINDIR=%{buildroot}/sbin \
-	MANDIR=%{buildroot}/%{_mandir}
+%make_install
+mkdir -p %{buildroot}/sbin
+ln -sf %{_sbindir}/iw %{buildroot}/sbin/iw
 
 %files
 %doc COPYING README
 /sbin/iw
+%{_sbindir}/iw
 %{_mandir}/man8/iw.8.*
