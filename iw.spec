@@ -1,11 +1,11 @@
 Summary:	Configuration utility for wireless devices
 Name:		iw
-Version:	5.0
+Version:	5.0.1
 Release:	1
 License:	BSD
 Group:		System/Base
 Url:		http://linuxwireless.org/en/users/Documentation/iw/
-Source0:	http://kernel.org/pub/software/network/iw/iw-%{version}.tar.xz
+Source0:	http://kernel.org/pub/software/network/iw/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(libnl-3.0)
 
 %description
@@ -14,14 +14,14 @@ Currently you can only use this utility to configure devices which use a
 mac80211 driver as these are the new drivers being written.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %setup_compile_flags
-%make CC=%{__cc}
+%make_build CC=%{__cc} CFLAGS="%{optflags}" LDFLAGS="%{ldflags}"
 
 %install
-%makeinstall \
+%make_install \
 	PREFIX=%{buildroot} \
 	BINDIR=%{buildroot}/sbin \
 	MANDIR=%{buildroot}/%{_mandir}
