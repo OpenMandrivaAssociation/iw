@@ -18,7 +18,7 @@ mac80211 driver as these are the new drivers being written.
 
 %build
 %setup_compile_flags
-%make_build CC=%{__cc} CFLAGS="%{optflags}" LDFLAGS="%{ldflags}"
+%make_build CC=%{__cc}
 
 %install
 %make_install \
