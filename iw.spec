@@ -1,11 +1,14 @@
+%global optflags %{optflags} -fuse-ld=bfd
+
 Summary:	Configuration utility for wireless devices
 Name:		iw
 Version:	5.9
-Release:	1
+Release:	2
 License:	BSD
 Group:		System/Base
 Url:		http://linuxwireless.org/en/users/Documentation/iw/
 Source0:	http://kernel.org/pub/software/network/iw/%{name}-%{version}.tar.xz
+Patch0:		8fab0c9ee9db217587a58efcc37421c86edcb638..1325244b77d56fd7a16d1e35fdae0efc151920b1.patch
 BuildRequires:	pkgconfig(libnl-3.0)
 
 %description
@@ -17,7 +20,7 @@ mac80211 driver as these are the new drivers being written.
 %autosetup -p1
 
 %build
-%setup_compile_flags
+%set_build_flags
 %make_build CC=%{__cc}
 
 %install
