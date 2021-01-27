@@ -1,7 +1,7 @@
 Summary:	Configuration utility for wireless devices
 Name:		iw
 Version:	5.9
-Release:	1
+Release:	2
 License:	BSD
 Group:		System/Base
 Url:		http://linuxwireless.org/en/users/Documentation/iw/
@@ -17,7 +17,7 @@ mac80211 driver as these are the new drivers being written.
 %autosetup -p1
 
 %build
-%setup_compile_flags
+%set_build_flags
 %make_build CC=%{__cc}
 
 %install
