@@ -1,9 +1,10 @@
-%global optflags %{optflags} -fuse-ld=bfd
+%global optflags %{optflags} -Oz
+%global build_ldflags %{build_ldflags} -z nostart-stop-gc
 
 Summary:	Configuration utility for wireless devices
 Name:		iw
 Version:	5.16
-Release:	1
+Release:	2
 License:	BSD
 Group:		System/Base
 Url:		http://linuxwireless.org/en/users/Documentation/iw/
@@ -31,4 +32,4 @@ ln -sf %{_sbindir}/iw %{buildroot}/sbin/iw
 %doc COPYING README
 /sbin/iw
 %{_sbindir}/iw
-%{_mandir}/man8/iw.8.*
+%doc %{_mandir}/man8/iw.8.*
