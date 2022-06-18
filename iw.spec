@@ -21,10 +21,10 @@ mac80211 driver as these are the new drivers being written.
 
 %build
 %set_build_flags
-%make_build CC=%{__cc}
+%make_build CC=%{__cc} SBINDIR=%{_sbindir}
 
 %install
-%make_install
+%make_install SBINDIR=%{_sbindir}
 
 %files
 %doc COPYING README
