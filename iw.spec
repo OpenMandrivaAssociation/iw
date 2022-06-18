@@ -4,7 +4,7 @@
 Summary:	Configuration utility for wireless devices
 Name:		iw
 Version:	5.19
-Release:	1
+Release:	2
 License:	BSD
 Group:		System/Base
 Url:		http://linuxwireless.org/en/users/Documentation/iw/
@@ -25,11 +25,8 @@ mac80211 driver as these are the new drivers being written.
 
 %install
 %make_install
-mkdir -p %{buildroot}/sbin
-ln -sf %{_sbindir}/iw %{buildroot}/sbin/iw
 
 %files
 %doc COPYING README
-/sbin/iw
 %{_sbindir}/iw
-%doc %{_mandir}/man8/iw.8.*
+%doc %{_mandir}/man8/iw.8*
