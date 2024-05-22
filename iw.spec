@@ -3,7 +3,7 @@
 
 Summary:	Configuration utility for wireless devices
 Name:		iw
-Version:	6.7
+Version:	6.9
 Release:	1
 License:	BSD
 Group:		System/Base
