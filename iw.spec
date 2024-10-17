@@ -7,7 +7,7 @@ Version:	6.9
 Release:	1
 License:	BSD
 Group:		System/Base
-Url:		http://linuxwireless.org/en/users/Documentation/iw/
+Url:		https://linuxwireless.org/en/users/Documentation/iw/
 Source0:	http://kernel.org/pub/software/network/iw/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(libnl-3.0)
 
