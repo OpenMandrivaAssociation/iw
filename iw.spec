@@ -9,6 +9,7 @@ License:	BSD
 Group:		System/Base
 Url:		https://linuxwireless.org/en/users/Documentation/iw/
 Source0:	http://kernel.org/pub/software/network/iw/%{name}-%{version}.tar.xz
+BuildRequires:	make
 BuildRequires:	pkgconfig(libnl-3.0)
 
 %description
